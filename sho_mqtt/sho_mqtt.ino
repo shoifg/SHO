@@ -1,4 +1,4 @@
-//Durante a gravação do código, o Esp32 requer que seja pressionado o botão "boot" para a sua gravação
+// Durante a gravação do código, o Esp32 requer que seja pressionado o botão "boot" para a sua gravação
 
 
 #include <DHT.h>

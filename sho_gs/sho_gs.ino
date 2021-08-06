@@ -1,6 +1,6 @@
 /**********
   IFG Campus Goiânia
-  Autores: Bruna Michelly O. S. Cordeiro, Fabrycio L. Nakano e Daniel S. Oliveira
+  Autores: Bruna Michelly O. S. Cordeiro, Fabrycio L. Nakano e Daniel S. Oliveira.
   Objetivo: Envio de leitura do sensor DHT22 para o Google sheets a cada cinco minutos, através do NodeMcu ESP8266.
   Origem: https://www.youtube.com/watch?v=okNECYf2xlY 
      
