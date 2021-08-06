@@ -111,6 +111,6 @@ void loop()
  
           Serial.println("Aguardando...");
   
-  // thingspeak needs minimum 15 sec delay between updates
+  // thingspeak necessita de pelo menos 15 segundos de delay entre seus updates
   delay(1000);
 }
