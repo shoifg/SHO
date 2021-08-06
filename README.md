@@ -1,2 +1,2 @@
-# SHO
+# MONITORAMENTO INTELIGENTE DA QUALIDADE DO AR PARAAMBIENTES DE TRABALHO REMOTO
  Em uma empresa, vários fatores são verificados e monitorados para manter a saúde ocupacional dos funcionários.  Quando o ambiente de trabalho é alterado para o trabalho remoto, ou seja, feito na casa do funcionário, torna-se complexo para a empresa ter conhecimento seas condições ambientes previstas em legislação estão sendoseguidas.  Em virtude disso, é necessário que haja um sistema que possa realizar o monitoramento adequado nessesambientes.  Desse modo, este trabalho apresenta o sistemaSHO (Smart Home Office) que consiste em uma solução IoT para o monitoramento da qualidade do ar em ambientes de trabalho remoto.
