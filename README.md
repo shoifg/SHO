@@ -65,7 +65,7 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 <p align="justify"> A conexão com a planilha Google Sheets, foi realizada de acordo com o fluxograma mostrado na figuras 5. Para melhorar o entendimento, a implementação do script na planilha será mostrado passo-a-passo a seguira.</p>
 
 
-# IMPLEMENTAÇÃO DO SCRIPT NA PLANILHA ON-LINE
+## IMPLEMENTAÇÃO DO SCRIPT NA PLANILHA ON-LINE
 
 1. Criar uma nova planilha no Google Sheet, com usuário e senha válidos. Recomenda-se renomear a planilha com um nome que seja relacionado com o objeto de trabalho. exemplo: *Banco de dados DHT22*;
 1. Nomear os cabeçalhos das colunas A, B, C e D com os nomes Date, Time, Temperature (ºC) e Humidity (%) respectivamente;
@@ -83,6 +83,31 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 <p align="center">
  Figura 7: Local para inserção do Spreadsheet ID
 </p>
+5. Para que o horário seja expresso corretamente, substituir a expressão **_Asia/Jakarta_** por **_America/Sao_Paulo_**.
+
+6. Clicar em **_Publicar_** e em **_Implantar como aplicativo da web_**. Na próxima janela, no menu suspenso da opção "**_Who has access to the app:_** escolha a opção "**_Anyone, even anonymous_**, conforme mostra a figura 8. Neste momento o usuários estará autorizando que qualquer um poderá ter acesso ao aplicativo, mesmo que anônimo.
+
+![image](https://user-images.githubusercontent.com/88517401/128615449-31b0ae93-9dc6-4fb2-8933-9dea6f1edf5f.png)
+<p align="center">
+ Figura 8: Autorização para acesso
+</p
+
+7. Nas janelas a seguir, autorizar que o aplicativo tenha acesso à planilha criada. Quando a janela apresentada na figura 9 aparecer, copie o link do aplicativo na web (**_Current web app URL_**). Este link servirá para testar e para ser inserido no código do microcontrolador para o envio dos dados do sensor para a planilha.
+
+![image](https://user-images.githubusercontent.com/88517401/128615416-412e2e9d-dc14-49ba-98ec-e94ff0849cc3.png)
+ <p align="center">
+ Figura 9: Link do aplicativo na web
+</p>
+8. Para testar o envio de dados para a planilha, cole o link copiado na janela do navegador, seguido pela expressão **_?temperature=100&humidity=20_**. Conferir se a planilha recebeu os dados com sucesso. Caso afirmativo, a planilha terá aspecto parecido com aquele mostrado na figura 10.
+ 
+ 
+ 
+ <p align="center">
+ Figura 10: Envio de dados para a planilha no Google Sheet
+</p>
+
+
+
 
 
 COLOCAR FLUXOGRAMA AQUI
