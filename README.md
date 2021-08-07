@@ -1,9 +1,12 @@
 # MONITORAMENTO INTELIGENTE DA QUALIDADE DO AR PARA AMBIENTES DE TRABALHO REMOTO
 <p align="justify">
-Em uma empresa, vários fatores são verificados e monitorados para manter a saúde ocupacional dos funcionários. Quando o ambiente de trabalho é alterado para o trabalho remoto, ou seja, feito na casa do funcionário, torna-se complexo para a empresa ter conhecimento se as condições ambientes previstas em legislação estão sendo seguidas.  Em virtude disso, é necessário que haja um sistema que possa realizar o monitoramento adequado nesses ambientes. Desse modo, este trabalho apresenta o sistema SHO (Smart Home Office) que consiste em uma solução IoT para o monitoramento da qualidade do ar em ambientes de trabalho remoto.
-</p>
+Em uma empresa, vários fatores são verificados e monitorados para manter a saúde ocupacional dos funcionários. Quando o ambiente de trabalho é alterado para o trabalho remoto, ou seja, feito na casa do funcionário, torna-se complexo para a empresa ter conhecimento se as condições ambientes previstas em legislação estão sendo seguidas.  Em virtude disso, é necessário que haja um sistema que possa realizar o monitoramento adequado nesses ambientes. Desse modo, este trabalho apresenta o sistema SHO (Smart Home Office) que consiste em uma solução IoT para o monitoramento da qualidade do ar em ambientes de trabalho remoto.<p/>    
 
-## HARDWARE UTILIZADO
+<p align="justify">
+Neste projeto, o monitoramente dos dados coletados pelo sensor de temperatura e umidade foram enviados para a plataforma ThingSpeak<sup>TM</sup> para a visualização em tempo real e para uma planilha no Google Sheets, que servirá como um banco de dados dos parâmetros lidos pelo sensor.</p> 
+
+
+## HARDWARE
 <p align="justify">
 Para a montagem do protótipo foram utilizados o NodeMcu ESP32, o sensor de temperatura e umidade DHT22, LEDs, resistores de 68 Ohm e uma fonte de alimentação 5 VDC, mostrados na figura 1.
 </p>
@@ -12,8 +15,7 @@ Para a montagem do protótipo foram utilizados o NodeMcu ESP32, o sensor de temp
 <p align="center">
  Figura 1: Materiais utilizados
 </p>
-Na tabela 1 são mostrados os componentes e as quantidades dos materiais utilizados.
-
+<p align="justify">Na tabela 1 são mostrados os componentes e as quantidades dos materiais utilizados.<p/>
 
 |Item  |Componente                |  Quantidade|
 |:---: |                       ---|       :---:|
@@ -33,18 +35,21 @@ Os componentes foram conectados por meio de jumpers tipo macho em duas protoboar
  Figura 2: Esquemático
 </p>
 
+<p>     
+<p/>
+
 ![prototipo](https://user-images.githubusercontent.com/88517401/128603050-fe82b4a6-b5f8-4276-b5d7-8124fb128bee.jpeg)
 
 <p align="center">
  Figura 3: Protótipo montado
 </p>
 
-Nos tópicos a seguir são mostradas as etapas para a conexão via protocolo MQTT com a plataforma
+<p align="justify">
+Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de dados via protocolo MQTT para a plataforma ThingSpeak<sup>TM</sup> e para a planilha no Google Sheets.
+</p>
 
+## CONEXÃO VIA PROTOCOLO MQTT
+<p align="justify"> Para a conexão do protocolo via MQTT, é necessário que o microcontrolador esteja conectado inicialmente com o roteados WiFi.</p>
 
-
-  ### CONEXÃO VIA PROTOCOLO MQTT
-*sdfasf*
-
-#### ENVIO DE DADOS PARA O GOOGLE SHEETS
+## ENVIO DE DADOS PARA O GOOGLE SHEETS
 ---
