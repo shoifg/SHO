@@ -62,7 +62,28 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 
 
 ## ENVIO DE DADOS PARA O GOOGLE SHEETS
-<p align="justify"> A conexão com a planilha Google Sheets, foi realizada de acordo com o fluxograma mostrado na figura 5.</p>
+<p align="justify"> A conexão com a planilha Google Sheets, foi realizada de acordo com o fluxograma mostrado na figuras 5. Para melhorar o entendimento, a implementação do script na planilha será mostrado passo-a-passo a seguira.</p>
+
+
+# IMPLEMENTAÇÃO DO SCRIPT NA PLANILHA ON-LINE
+
+1. Criar uma nova planilha no Google Sheet, com usuário e senha válidos. Recomenda-se renomear a planilha com um nome que seja relacionado com o objeto de trabalho. exemplo: *Banco de dados DHT22*;
+1. Nomear os cabeçalhos das colunas A, B, C e D com os nomes Date, Time, Temperature (ºC) e Humidity (%) respectivamente;
+2. Clicar em **_Ferramentas_** e a seguir em **_script editor_**. Recomenda-se usar o editor de *script legado* e renomear a planilha com um nome que seja relacionado com o objeto de trabalho;
+3. Copiar todo o código fonte do arquivo ["Código do Script Google sheet.txt"](https://github.com/shoifg/SHO/blob/main/Script/C%C3%B3digo%20do%20Script%20Google%20sheet.txt) para o *script editor*. O código pode ser consultado e copiado de nosso repositório;
+4. No código dentro do *script editor*, copiar o **_Spreadsheet ID_** da planilha que servirá como banco de dados, para o interior das aspas em frente à variável "**_var sheet_id_**". O **_Spreadsheet ID_** e o local para onde deve copiado, são mostrados nas figuras 6 e 7 a seguir.
+
+![Spreadsheet ID](https://user-images.githubusercontent.com/88517401/128615053-9dca9929-428c-47cf-9aeb-9586df5da89e.PNG)
+
+<p align="center">
+ Figura 6: Spreadsheet ID
+</p>
+
+![local de inserção do spreadshet ID](https://user-images.githubusercontent.com/88517401/128615113-b8a7b09e-57d9-4750-97f9-f26c0d5669b1.png)
+<p align="center">
+ Figura 7: Local para inserção do Spreadsheet ID
+</p>
+
 
 COLOCAR FLUXOGRAMA AQUI
 
