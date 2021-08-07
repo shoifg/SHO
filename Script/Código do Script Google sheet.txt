@@ -1,3 +1,4 @@
+
 function doGet(e) { 
   Logger.log( JSON.stringify(e) );
   var result = 'Ok';
