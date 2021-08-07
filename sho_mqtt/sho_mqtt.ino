@@ -10,7 +10,7 @@
   #define ledGreen 25
 #define ledRed 26
 
-int dhtPin = 2;
+int dhtPin = 4;
 float temp = 0;
 float umid = 0;
 
@@ -21,8 +21,8 @@ char ssid[] = "GlobalNet_Daniel"; //nome da rede.
 char pass[] = "2cc42829"; //senha da rede.
 char mqttUserName[] = "sho"; //nome de usuário do MQTT
 char mqttPass[] = "SXVQDA8CTIUT3ES1"; //chave de acesso do MQTT.
-char writeAPIKey[] = "QWWB8G3YBMQDZLTL"; //chave de acesso do canal thingspeak.
-long channelID = 1451044; //Identificação do canal thingspeak.
+char writeAPIKey[] = "DN6SJJDTOJUJIUVP"; //chave de acesso do canal thingspeak.
+long channelID = 1447649; //Identificação do canal thingspeak.
 /*Definir identificação de cliente randomica.*/
 static const char alphanum[] = "0123456789""ABCDEFGHIJKLMNOPQRSTUVWXYZ""abcdefghijklmnopqrstuvwxyz";
 
