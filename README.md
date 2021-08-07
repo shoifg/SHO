@@ -11,7 +11,8 @@ Neste projeto, o monitoramente dos dados coletados pelo sensor de temperatura e 
 Para a montagem do protótipo foram utilizados o NodeMcu ESP32, o sensor de temperatura e umidade DHT22, LEDs, resistores de 68 Ohm e uma fonte de alimentação 5 VDC, mostrados na figura 1.
 </p>
 
-![Componentes utilizados](https://user-images.githubusercontent.com/88517401/128585415-306f60da-9e10-45a5-a162-0ea447117c0d.PNG)
+![figura componentes](https://user-images.githubusercontent.com/88517401/128616376-e6f6b14f-4ca7-4f86-a2b5-91b3ea90c40c.PNG)
+
 <p align="center">
  Figura 1: Materiais utilizados
 </p>
@@ -29,7 +30,7 @@ Para a montagem do protótipo foram utilizados o NodeMcu ESP32, o sensor de temp
 Os componentes foram conectados por meio de jumpers tipo macho em duas protoboards, pois o tamanho da placa NodeMCU ESP32 não permite que seja utilizada somente uma protoboard (mesmo que com muitos furos). O diagrama esquemático e protótipo montado são mostrados nas figuras 2 e 3.
 <p/>
 
-![esquemático](https://user-images.githubusercontent.com/88517401/128602926-fa6e880e-bf4c-407d-a5bf-7d18de1bc702.png)
+![esp32_bb](https://user-images.githubusercontent.com/88517401/128616361-a142b168-5318-4c53-a0eb-b0384aa3abe8.png)
 
 <p align="center">
  Figura 2: Esquemático
@@ -38,7 +39,7 @@ Os componentes foram conectados por meio de jumpers tipo macho em duas protoboar
 <p>     
 <p/>
 
-![prototipo](https://user-images.githubusercontent.com/88517401/128603050-fe82b4a6-b5f8-4276-b5d7-8124fb128bee.jpeg)
+![prototipo](https://user-images.githubusercontent.com/88517401/128616401-980f2ef7-e0a2-4461-b00a-0912ce7ba574.jpeg)
 
 <p align="center">
  Figura 3: Protótipo montado
