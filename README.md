@@ -19,18 +19,19 @@ Na tabela 1 são mostrados os componentes e as quantidades dos materiais utiliza
 |3     |Led 3mm (verde e vermelho)|           2|
 |4     |Resistores 68 Ohm         |           2|
 |5     |Resistor 1k Ohm           |           1|
+
 <p align="justify">
-Os componentes foram conectados por meio de *jumpers* tipo macho em duas *protoboards*, pois o tamanho da placa NodeMCU ESP32 não permite que seja utilizada somente uma *protoboard* (mesmo que com muitos furos). O protótipo montado é mostrado na figura 2.
+Os componentes foram conectados por meio de jumpers tipo macho em duas protoboards, pois o tamanho da placa NodeMCU ESP32 não permite que seja utilizada somente uma protoboard (mesmo que com muitos furos). O protótipo montado é mostrado na figura 2.
 <p/>
 
 ![Prototipo montado](https://user-images.githubusercontent.com/88517401/128586568-0fcfe727-be02-4a51-9ee5-a997a791933c.jpeg)
 
-<p align="center">
+<p align="rigth">
  Figura 2: Protótipo montado
 </p>
 
   ### CONEXÃO VIA PROTOCOLO MQTT
-
+*sdfasf*
 
 #### ENVIO DE DADOS PARA O GOOGLE SHEETS
 ---
