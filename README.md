@@ -51,7 +51,8 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 ## CONEXÃO VIA PROTOCOLO MQTT
 <p align="justify"> A conexão com a plataforma ThingSpeak<sup>TM</sup> via protocolo MQTT, foi realizada de acordo com o fluxograma mostrado na figura 4.</p>
 
-![Diagrama em branco](https://user-images.githubusercontent.com/88517401/128607077-ec03b05f-ff9f-4a05-a882-117bfe1be3ac.png)
+![Fluxograma MQTT](https://user-images.githubusercontent.com/88517401/128608905-441cc8c4-8981-4cb5-a769-819e83ef926d.png)
+
 
 <p align="center">
  Figura 4: Fluxograma de conexão
