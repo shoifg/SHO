@@ -49,7 +49,17 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 </p>
 
 ## CONEXÃO VIA PROTOCOLO MQTT
-<p align="justify"> Para a conexão do protocolo via MQTT, é necessário que o microcontrolador esteja conectado inicialmente com o roteados WiFi.</p>
+<p align="justify"> A conexão com a plataforma ThingSpeak<sup>TM</sup> via protocolo MQTT, foi realizada de acordo com o fluxograma mostrado na figura 4.</p>
+
+![Diagrama em branco](https://user-images.githubusercontent.com/88517401/128607077-ec03b05f-ff9f-4a05-a882-117bfe1be3ac.png)
+
+<p align="center">
+ Figura 4: Fluxograma de conexão
+</p>
+
+<p align="justify"> O código desenvolvido está...... (REFERENCIAR o Código).</p>
+
+
 
 ## ENVIO DE DADOS PARA O GOOGLE SHEETS
 ---
