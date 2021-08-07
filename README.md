@@ -1,5 +1,7 @@
 # MONITORAMENTO INTELIGENTE DA QUALIDADE DO AR PARA AMBIENTES DE TRABALHO REMOTO
-Em uma empresa, vários fatores são verificados e monitorados para manter a saúde ocupacional dos funcionários.  Quando o ambiente de trabalho é alterado para o trabalho remoto, ou seja, feito na casa do funcionário, torna-se complexo para a empresa ter conhecimento seas condições ambientes previstas em legislação estão sendoseguidas.  Em virtude disso, é necessário que haja um sistema que possa realizar o monitoramento adequado nessesambientes.  Desse modo, este trabalho apresenta o sistemaSHO (Smart Home Office) que consiste em uma solução IoT para o monitoramento da qualidade do ar em ambientes de trabalho remoto.
+<p align="justify">
+Em uma empresa, vários fatores são verificados e monitorados para manter a saúde ocupacional dos funcionários. Quando o ambiente de trabalho é alterado para o trabalho remoto, ou seja, feito na casa do funcionário, torna-se complexo para a empresa ter conhecimento se as condições ambientes previstas em legislação estão sendo seguidas.  Em virtude disso, é necessário que haja um sistema que possa realizar o monitoramento adequado nesses ambientes. Desse modo, este trabalho apresenta o sistema SHO (Smart Home Office) que consiste em uma solução IoT para o monitoramento da qualidade do ar em ambientes de trabalho remoto.
+</p>
 
 ## HARDWARE UTILIZADO
 <p align="justify">
@@ -12,6 +14,7 @@ Para a montagem do protótipo foram utilizados o NodeMcu ESP32, o sensor de temp
 </p>
 Na tabela 1 são mostrados os componentes e as quantidades dos materiais utilizados.
 
+
 |Item  |Componente                |  Quantidade|
 |:---: |                       ---|       :---:|
 |1     |NodeMcu Esp32             |           1|
@@ -21,14 +24,24 @@ Na tabela 1 são mostrados os componentes e as quantidades dos materiais utiliza
 |5     |Resistor 1k Ohm           |           1|
 
 <p align="justify">
-Os componentes foram conectados por meio de jumpers tipo macho em duas protoboards, pois o tamanho da placa NodeMCU ESP32 não permite que seja utilizada somente uma protoboard (mesmo que com muitos furos). O protótipo montado é mostrado na figura 2.
+Os componentes foram conectados por meio de jumpers tipo macho em duas protoboards, pois o tamanho da placa NodeMCU ESP32 não permite que seja utilizada somente uma protoboard (mesmo que com muitos furos). O diagrama esquemático e protótipo montado são mostrados nas figuras 2 e 3.
 <p/>
 
-![Prototipo montado](https://user-images.githubusercontent.com/88517401/128586568-0fcfe727-be02-4a51-9ee5-a997a791933c.jpeg)
+![esquemático](https://user-images.githubusercontent.com/88517401/128602926-fa6e880e-bf4c-407d-a5bf-7d18de1bc702.png)
 
-<p align="rigth">
- Figura 2: Protótipo montado
+<p align="center">
+ Figura 2: Esquemático
 </p>
+
+![prototipo](https://user-images.githubusercontent.com/88517401/128603050-fe82b4a6-b5f8-4276-b5d7-8124fb128bee.jpeg)
+
+<p align="center">
+ Figura 3: Protótipo montado
+</p>
+
+Nos tópicos a seguir são mostradas as etapas para a conexão via protocolo MQTT com a plataforma
+
+
 
   ### CONEXÃO VIA PROTOCOLO MQTT
 *sdfasf*
