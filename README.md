@@ -73,40 +73,48 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 3. Copiar todo o código fonte do arquivo ["Código do Script Google sheet.txt"](https://github.com/shoifg/SHO/blob/main/Script/C%C3%B3digo%20do%20Script%20Google%20sheet.txt) para o *script editor*. O código pode ser consultado e copiado de nosso repositório;
 4. No código dentro do *script editor*, copiar o **_Spreadsheet ID_** da planilha que servirá como banco de dados, para o interior das aspas em frente à variável "**_var sheet_id_**". O **_Spreadsheet ID_** e o local para onde deve copiado, são mostrados nas figuras 6 e 7 a seguir.
 
-![Spreadsheet ID](https://user-images.githubusercontent.com/88517401/128615053-9dca9929-428c-47cf-9aeb-9586df5da89e.PNG)
+![Spreadsheet ID numero](https://user-images.githubusercontent.com/88517401/128616174-716170c1-3f6e-4877-8d1b-7025bfc507a0.PNG)
 
 <p align="center">
  Figura 6: Spreadsheet ID
 </p>
 
-![local de inserção do spreadshet ID](https://user-images.githubusercontent.com/88517401/128615113-b8a7b09e-57d9-4750-97f9-f26c0d5669b1.png)
+![Spreadsheet ID](https://user-images.githubusercontent.com/88517401/128616109-d8a318cd-2d50-4c96-914b-d5433124a413.PNG)
+
+
 <p align="center">
- Figura 7: Local para inserção do Spreadsheet ID
+Figura 7: Local para inserção do Spreadsheet ID
 </p>
+
 5. Para que o horário seja expresso corretamente, substituir a expressão **_Asia/Jakarta_** por **_America/Sao_Paulo_**.
+6. Clicar em **_Publicar_** e em **_Implantar como aplicativo da web_**. Na próxima janela, no menu suspenso da opção **_Who has access to the app:_** escolha a opção **_Anyone, even anonymous_**, conforme mostra a figura 8.
+7. Neste momento o usuários estará autorizando que qualquer um poderá ter acesso ao aplicativo, mesmo que anônimo.
 
-6. Clicar em **_Publicar_** e em **_Implantar como aplicativo da web_**. Na próxima janela, no menu suspenso da opção "**_Who has access to the app:_** escolha a opção "**_Anyone, even anonymous_**, conforme mostra a figura 8. Neste momento o usuários estará autorizando que qualquer um poderá ter acesso ao aplicativo, mesmo que anônimo.
+![deploy as web](https://user-images.githubusercontent.com/88517401/128615963-eb27574f-d987-4dc1-8bb9-84b637267fa2.PNG)
 
-![image](https://user-images.githubusercontent.com/88517401/128615449-31b0ae93-9dc6-4fb2-8933-9dea6f1edf5f.png)
 <p align="center">
- Figura 8: Autorização para acesso
-</p
-
-7. Nas janelas a seguir, autorizar que o aplicativo tenha acesso à planilha criada. Quando a janela apresentada na figura 9 aparecer, copie o link do aplicativo na web (**_Current web app URL_**). Este link servirá para testar e para ser inserido no código do microcontrolador para o envio dos dados do sensor para a planilha.
-
-![image](https://user-images.githubusercontent.com/88517401/128615416-412e2e9d-dc14-49ba-98ec-e94ff0849cc3.png)
- <p align="center">
- Figura 9: Link do aplicativo na web
+Figura 8: Autorização para acesso
 </p>
-8. Para testar o envio de dados para a planilha, cole o link copiado na janela do navegador, seguido pela expressão **_?temperature=100&humidity=20_**. Conferir se a planilha recebeu os dados com sucesso. Caso afirmativo, a planilha terá aspecto parecido com aquele mostrado na figura 10.
+
+8. Nas janelas a seguir, autorizar que o aplicativo tenha acesso à planilha criada. Quando a janela apresentada na figura 9 aparecer, copie o link do aplicativo na web (**_Current web app URL_**). Este link servirá para testar e para ser inserido no código do microcontrolador para o envio dos dados do sensor para a planilha.
+
+![current app url](https://user-images.githubusercontent.com/88517401/128616033-9df22921-b6fe-43d5-9e2c-103f64bff629.PNG)
+
  
+<p align="center">
+Figura 9: Link do aplicativo na web
+</p>
+
+9. Para testar o envio de dados para a planilha, cole o link copiado na janela do navegador, seguido pela expressão **_?temperature=100&humidity=20_**. Conferir se a planilha recebeu os dados com sucesso. Caso afirmativo, a planilha terá aspecto similar com aquele mostrado na figura 10.
  
+ ![planilha tutorial](https://user-images.githubusercontent.com/88517401/128615994-8856f331-8e17-46b5-bf20-edbb3de7141d.PNG)
+
  
  <p align="center">
  Figura 10: Envio de dados para a planilha no Google Sheet
 </p>
 
-
+10. 
 
 
 
