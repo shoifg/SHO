@@ -58,9 +58,16 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
  Figura 4: Fluxograma de conexão
 </p>
 
-<p align="justify"> O código desenvolvido está...... (REFERENCIAR o Código).</p>
-
+ O [código desenvolvido](https://github.com/shoifg/SHO/blob/main/sho_mqtt/sho_mqtt.ino) pode ser consultado e baixado em nosso repositório.
 
 
 ## ENVIO DE DADOS PARA O GOOGLE SHEETS
----
+<p align="justify"> A conexão com a planilha Google Sheets, foi realizada de acordo com o fluxograma mostrado na figura 5.</p>
+
+COLOCAR FLUXOGRAMA AQUI
+
+<p align="center">
+ Figura 5: Fluxograma de conexão
+</p>
+
+ O [código desenvolvido](https://github.com/shoifg/SHO/blob/main/sho_gs/sho_gs.ino) pode ser consultado e baixado em nosso repositório.
