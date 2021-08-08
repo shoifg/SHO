@@ -88,7 +88,7 @@ void loop() {
     Serial.println(Temp);
     Serial.println(Humi);
     sendData(t, h);                                         //--> Chama a subrotina "sendData"
-    delay(1000);                                           //--> Aguarda cinco minutos para repetira o envio de dados
+    delay(300000);                                          //--> Aguarda cinco minutos para repetira o envio de dados
   }  
   else{
     Serial.println("Falha na leitura de leitura do sensor DHT!");
