@@ -5,7 +5,13 @@ Em uma empresa, vários fatores são verificados e monitorados para manter a sa�
 <p align="justify">
 Neste projeto, o monitoramente dos dados coletados pelo sensor de temperatura e umidade foram enviados para a plataforma ThingSpeak<sup>TM</sup> para a visualização em tempo real e para uma planilha no Google Sheets, que servirá como um banco de dados dos parâmetros lidos pelo sensor.</p> 
 
-[GGGG](https://github.com/shoifg/SHO/blob/main/README.md#conex%C3%A3o-via-protocolo-mqtt).
+
+## ÍNDICE
+- [Hardware](https://github.com/shoifg/SHO#hardware).
+- [Conexão via protocolo MQTT](https://github.com/shoifg/SHO/blob/main/README.md#conex%C3%A3o-via-protocolo-mqtt).
+- [Envio para a planilha Google Sheets](https://github.com/shoifg/SHO#envio-de-dados-para-o-google-sheets).
+  - [Implementação do script na planilha on-line](https://github.com/shoifg/SHO#implementa%C3%A7%C3%A3o-do-script-na-planilha-on-line).
+  - [Adaptação do código do NodeMcu ESP32](https://github.com/shoifg/SHO#adapta%C3%A7%C3%A3o-do-c%C3%B3digo-do-nodemcu-esp32).
 
 
 ## HARDWARE
