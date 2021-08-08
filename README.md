@@ -179,7 +179,7 @@ Além do site, os dados também podem ser visualizados através de canais na pla
 </p>
 
 <p align="justify">
-A construção do Site não será detalhada neste tutorial, pois pode ser facilmente realizada através da plataforma Google Sites. O principal detalhe é o código a ser incorporado no site para a leitura dos sensores, podendo ser feita através do seguinte código:
+A construção do Site não será detalhada neste tutorial, pois pode ser facilmente realizada através da plataforma Google Sites. O principal detalhe é o código a ser incorporado no site para a leitura dos sensores, podendo ser feita através das seguintes linha de comando:
 </p>
 
 
