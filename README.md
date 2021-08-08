@@ -116,7 +116,19 @@ Figura 9: Link do aplicativo na web
 
 ### ADAPTAÇÃO DO CÓDIGO DO NODEMCU ESP32
 
-Para o correto funcionamento do código, 
+1. Inserir o nome da rede na qual se deseja ter conexão e a respectiva senha. Inserir entre as aspas da variável **_String GAS_ID_** o **_spreadsheet script ID_**. O trecho de código a seguir mostra o local de inserção do **_spreadsheet script ID_**.
+```
+const char* host = "script.google.com";
+const int httpsPort = 443;
+//-------------------------------------------------------------------------------------------------------------------------
+WiFiClientSecure client;                                                    //--> Criação do objeto WiFiClientSecure.                                                       
+String GAS_ID = "AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls";  //--> spreadsheet script ID
+```
+O **_spreadsheet script ID_** pode ser extraído do **_Current web app URL_** obtido no item 9. Se, por exemplo, o **_Current web app URL_** for:
+
+https://script.google.com/macros/s/AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls/exec
+
+O **_spreadsheet script ID_** será o código entre **/s/** e **/exec**, ou seja: **AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls**.
 
 
 
