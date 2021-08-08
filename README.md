@@ -5,7 +5,7 @@ Em uma empresa, vários fatores são verificados e monitorados para manter a sa�
 <p align="justify">
 Neste projeto, o monitoramente dos dados coletados pelo sensor de temperatura e umidade foram enviados para a plataforma ThingSpeak<sup>TM</sup> para a visualização em tempo real e para uma planilha no Google Sheets, que servirá como um banco de dados dos parâmetros lidos pelo sensor.</p> 
 
-
+___
 ## ÍNDICE
 - [Hardware](https://github.com/shoifg/SHO#hardware).
 - [Conexão via protocolo MQTT](https://github.com/shoifg/SHO/blob/main/README.md#conex%C3%A3o-via-protocolo-mqtt).
@@ -14,7 +14,7 @@ Neste projeto, o monitoramente dos dados coletados pelo sensor de temperatura e 
   - [Adaptação do código do NodeMcu ESP32](https://github.com/shoifg/SHO#adapta%C3%A7%C3%A3o-do-c%C3%B3digo-do-nodemcu-esp32).
 - [Resultados](https://github.com/shoifg/SHO/#resultados)
 
-
+___
 ## HARDWARE
 <p align="justify">
 Para a montagem do protótipo foram utilizados o NodeMcu ESP32, o sensor de temperatura e umidade DHT22, LEDs, resistores de 68 Ohm e uma fonte de alimentação 5 VDC, mostrados na figura 1.
@@ -58,6 +58,7 @@ Os componentes foram conectados por meio de jumpers tipo macho em duas protoboar
 Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de dados via protocolo MQTT para a plataforma ThingSpeak<sup>TM</sup> e para a planilha no Google Sheets.
 </p>
 
+___
 ## CONEXÃO VIA PROTOCOLO MQTT
 <p align="justify"> A conexão com a plataforma ThingSpeak<sup>TM</sup> via protocolo MQTT, foi realizada de acordo com o fluxograma mostrado na figura 4.</p>
 
@@ -69,7 +70,7 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 
  O [código desenvolvido](https://github.com/shoifg/SHO/blob/main/sho_mqtt/sho_mqtt.ino) pode ser consultado e baixado em nosso repositório.
 
-
+___
 ## ENVIO DE DADOS PARA O GOOGLE SHEETS
 <p align="justify"> A conexão com a planilha Google Sheets, foi realizada de acordo com o fluxograma mostrado na figuras 5. Para melhorar o entendimento, a implementação do script na planilha será mostrado passo-a-passo a seguir.</p>
 
@@ -154,6 +155,7 @@ Um [video explicativo](https://github.com/shoifg/SHO/blob/main/NodeMCU%20ESP8266
 
  O [código desenvolvido](https://github.com/shoifg/SHO/blob/main/sho_gs/sho_gs.ino) pode ser consultado e baixado em nosso repositório.
  
+___
 ## RESULTADOS
 Neste projeto, os dados provenientes das leituras do sensor DHT22 foram disponibilizados em um site construído através do serviço *__Google Sites__*. Os dados podem ser visualizados graficamente e em tempo real. A figura 11 mostra uma captura de tela do site construído até o momento.
 
