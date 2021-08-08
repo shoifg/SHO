@@ -124,13 +124,15 @@ const int httpsPort = 443;
 WiFiClientSecure client;                                                    //--> Criação do objeto WiFiClientSecure.                                                       
 String GAS_ID = "AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls";  //--> spreadsheet script ID
 ```
+***
+IMPORTANTE
 O **_spreadsheet script ID_** pode ser extraído do **_Current web app URL_** obtido no item 9. Se, por exemplo, o **_Current web app URL_** for:
 
 https://script.google.com/macros/s/AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls/exec
 
 O **_spreadsheet script ID_** será o código entre **/s/** e **/exec**, ou seja: **AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls**.
-
-
+***
+Um [video explicativo](https://github.com/shoifg/SHO/blob/main/NodeMCU%20ESP8266%20%2B%20Google%20Spreadsheet%20_%20NodeMCU%20Sends%20Data%20to%20Google%20Sheets%20Directly%20(No%20Third%20Party).mp4) de apoio pode ser consultado no link: https://www.youtube.com/watch?v=okNECYf2xlY, creditado ao canal [Uteh Str](https://www.youtube.com/channel/UCk8rZ8lhAH4H-75tQ7Ljc1A).
 
 
 COLOCAR FLUXOGRAMA AQUI
