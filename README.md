@@ -12,6 +12,7 @@ Neste projeto, o monitoramente dos dados coletados pelo sensor de temperatura e 
 - [Envio para a planilha Google Sheets](https://github.com/shoifg/SHO#envio-de-dados-para-o-google-sheets).
   - [Implementação do script na planilha on-line](https://github.com/shoifg/SHO#implementa%C3%A7%C3%A3o-do-script-na-planilha-on-line).
   - [Adaptação do código do NodeMcu ESP32](https://github.com/shoifg/SHO#adapta%C3%A7%C3%A3o-do-c%C3%B3digo-do-nodemcu-esp32).
+- [Resultados](https://github.com/shoifg/SHO/#resultados)
 
 
 ## HARDWARE
@@ -176,15 +177,16 @@ Além do site, os dados também podem ser visualizados através de canais na pla
 <p align="justify">
 A construção do Site não será detalhada neste tutorial, pois pode ser facilmente realizada através da plataforma Google Sites. O principal detalhe é o código a ser incorporado no site para a leitura dos sensores, podendo ser feita através do seguinte código:
 </p>
+
 ***
-Gráfico:
+**Gráfico:**
 ```
 <iframe width="450" height="260" style="border: 0px solid #cccccc;" src="https://thingspeak.com/channels/CHANNEL_ID/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
 ```
-**IMPORTANTE:** Substituir "**Channel_ID** pelo número do canal, obtido na platadorma ThingSpeak. 
+**IMPORTANTE:** Substituir "**Channel_ID**" pelo número do canal, obtido na platadorma ThingSpeak. 
 ***
 
-Última leitura do sensor (tempo real):
+**Última leitura do sensor (tempo real):**
 ```
 	<!DOCTYPE html>
 	<html lang="en">
@@ -252,5 +254,5 @@ Gráfico:
 	</style>
 	</html>
 ```
- **IMPORTANTE:** Substituir **Chanel_ID** pelo número do canal, obtido na platadorma ThingSpeak. O campo **api_key** (Read) também deve ser atualizado, obtido na mesma plataforma. 
+ **IMPORTANTE:** Substituir "**Chanel_ID**" pelo número do canal, obtido na platadorma ThingSpeak. O campo **api_key** (Read) também deve ser atualizado, obtido na mesma plataforma. 
 ***
