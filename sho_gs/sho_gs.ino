@@ -29,7 +29,7 @@ const int httpsPort = 443;
 //----------------------------------------------------------------------------------------
 WiFiClientSecure client;                              //--> Criação do objeto WiFiClientSecure. https://script.google.com/macros/s/AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls/exec
                                                       
-String GAS_ID = "AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls"; //--> spreadsheet script ID
+String GAS_ID = "AKfycbxbSLo2WBFgwg_rk9PclcdW4dZPM4FVIOEKJV--O-6fwbZ8yyw"; //--> spreadsheet script ID
 
 //=============================== void setup =============================================
 
@@ -77,30 +77,30 @@ String GAS_ID = "AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls"; //-->
 void loop() {
  
  //--------------- Rotina de leitura do sensor DHT22 ---------------------------------------------- 
-  int h = dht.readHumidity();                         //--> Leitura da umidade (%)
-  int t = dht.readTemperature();                      //--> Leitura da temperatura (ºC)
-  
-  
-  if (isnan(h) || isnan(t)) {                         //--> Checagem de falhas. Caso ocorram, tenta realizar a leitura novamente.
+  int h = dht.readHumidity();                             //--> Leitura da umidade (%)
+  int t = dht.readTemperature();                          //--> Leitura da temperatura (ºC)
+    
+  if (!(isnan(h) || isnan(t))) {                         //--> Checagem de falhas. Caso ocorram, tenta realizar a leitura novamente.
+    String Temp = "Temperature : " + String(t) + " °C";
+    String Humi = "Humidity : " + String(h) + " %";
+
+    Serial.println();
+    Serial.println(Temp);
+    Serial.println(Humi);
+    sendData(t, h);                                         //--> Chama a subrotina "sendData"
+    delay(1000);                                           //--> Aguarda cinco minutos para repetira o envio de dados
+  }  
+  else{
     Serial.println("Falha na leitura de leitura do sensor DHT!");
     delay(500);
     return;
   }
-  String Temp = "Temperature : " + String(t) + " °C";
-  String Humi = "Humidity : " + String(h) + " %";
 
-  Serial.println();
-  Serial.println(Temp);
-  Serial.println(Humi);
-  
-  sendData(t, h);                                         //--> Chama a subrotina "sendData"
-  delay(300000);                                          //--> Aguarda cinco minutos para repetira o envio de dados
 }
 
 //========================================= void sendData =====================================
 
 //--------------------------- Subrotina para envio de dados para a Google Sheets --------------
-
 
 void sendData(int tem, int hum) {
   Serial.println("==========");
@@ -135,18 +135,6 @@ void sendData(int tem, int hum) {
       break;
     }
   }
-  String line = client.readStringUntil('\n');
-  
-  if (line.startsWith("{\"state\":\"success\"")) {
-    Serial.println("esp8266/Arduino CI com sucesso!");
-  } else {
-    Serial.println("esp8266/Arduino CI falhou");
-  }
-  Serial.print("A resposta foi: ");
-  Serial.println(line);
-  Serial.println("fechando a conexão");
-  Serial.println("==========");
-  Serial.println();
-  
+ 
 } 
 //==============================================================================
