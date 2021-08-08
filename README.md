@@ -52,11 +52,10 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 ## CONEXÃO VIA PROTOCOLO MQTT
 <p align="justify"> A conexão com a plataforma ThingSpeak<sup>TM</sup> via protocolo MQTT, foi realizada de acordo com o fluxograma mostrado na figura 4.</p>
 
-![Fluxograma MQTT](https://user-images.githubusercontent.com/88517401/128608905-441cc8c4-8981-4cb5-a769-819e83ef926d.png)
-
+![Fluxograma MQTT (1)](https://user-images.githubusercontent.com/88517401/128641297-568a4e6f-4ae4-4ead-9153-9196aa8345c4.png)
 
 <p align="center">
- Figura 4: Fluxograma de conexão
+ Figura 4: Fluxograma de conexão com a plataforma ThingSpeak<sup>TM</sup>
 </p>
 
  O [código desenvolvido](https://github.com/shoifg/SHO/blob/main/sho_mqtt/sho_mqtt.ino) pode ser consultado e baixado em nosso repositório.
@@ -65,10 +64,10 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 ## ENVIO DE DADOS PARA O GOOGLE SHEETS
 <p align="justify"> A conexão com a planilha Google Sheets, foi realizada de acordo com o fluxograma mostrado na figuras 5. Para melhorar o entendimento, a implementação do script na planilha será mostrado passo-a-passo a seguir.</p>
 
-![Fluxograma GS](https://user-images.githubusercontent.com/88517401/128617977-6b1a5738-d036-43a3-a821-4f84956e8213.png)
+![Fluxograma GS (1)](https://user-images.githubusercontent.com/88517401/128641336-a7b0d9b9-3f0d-4f6d-83ee-870ad4c31ab4.png)
 
 <p align="center">
- Figura 5: Fluxograma de conexão
+ Figura 5: Fluxograma de conexão com a planilha Google Sheets
 </p>
 
 
@@ -80,13 +79,13 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 3. Copiar todo o código fonte do arquivo ["Código do Script Google sheet.txt"](https://github.com/shoifg/SHO/blob/main/Script/C%C3%B3digo%20do%20Script%20Google%20sheet.txt) para o *script editor*. O código pode ser consultado e copiado de nosso repositório;
 4. No código dentro do *script editor*, copiar o **_Spreadsheet ID_** da planilha que servirá como banco de dados, para o interior das aspas em frente à variável "**_var sheet_id_**". O **_Spreadsheet ID_** e o local para onde deve copiado, são mostrados nas figuras 6 e 7 a seguir.
 
-![Spreadsheet ID numero](https://user-images.githubusercontent.com/88517401/128616174-716170c1-3f6e-4877-8d1b-7025bfc507a0.PNG)
+![image](https://user-images.githubusercontent.com/88517401/128641691-e3fbb3ae-f0d3-4de4-8c5c-4a16c077de32.png)
 
 <p align="center">
  Figura 6: Spreadsheet ID
 </p>
 
-![Spreadsheet ID](https://user-images.githubusercontent.com/88517401/128616109-d8a318cd-2d50-4c96-914b-d5433124a413.PNG)
+![image](https://user-images.githubusercontent.com/88517401/128641619-2e89fc8a-6c74-44ac-a313-284f827f7ceb.png)
 
 
 <p align="center">
