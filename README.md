@@ -82,10 +82,10 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 ### IMPLEMENTAÇÃO DO SCRIPT NA PLANILHA ON-LINE
 
 1. Criar uma nova planilha no Google Sheet, com usuário e senha válidos. Recomenda-se renomear a planilha com um nome que seja relacionado com o objeto de trabalho. exemplo: *Banco de dados DHT22*;
-1. Nomear os cabeçalhos das colunas A, B, C e D com os nomes Date, Time, Temperature (ºC) e Humidity (%) respectivamente;
-2. Clicar em **_Ferramentas_** e a seguir em **_script editor_**. Recomenda-se usar o editor de *script legado* e renomear a planilha com um nome que seja relacionado com o objeto de trabalho;
+1. Nomear os cabeçalhos das colunas A, B, C e D com os nomes Data, Hora, Temperatura (ºC) e Umidade (%) respectivamente;
+2. Clicar em **_Ferramentas_** e a seguir em **_script editor_**. Recomenda-se usar o editor de *script legado* e renomear o script com um nome que seja relacionado com o objeto de trabalho;
 3. Copiar todo o código fonte do arquivo ["Código do Script Google sheet.txt"](https://github.com/shoifg/SHO/blob/main/Script/C%C3%B3digo%20do%20Script%20Google%20sheet.txt) para o *script editor*. O código pode ser consultado e copiado de nosso repositório;
-4. No código dentro do *script editor*, copiar o **_Spreadsheet ID_** da planilha que servirá como banco de dados, para o interior das aspas em frente à variável "**_var sheet_id_**". O **_Spreadsheet ID_** e o local para onde deve copiado, são mostrados nas figuras 6 e 7 a seguir.
+4. No código dentro do *script editor*, copiar o **_Spreadsheet ID_** da planilha que servirá como banco de dados, para o interior das aspas em frente à variável "**_var sheet_id_**". O **_Spreadsheet ID_** e o local para onde deve ser copiado, são mostrados nas figuras 6 e 7 a seguir.
 
 ![image](https://user-images.githubusercontent.com/88517401/128641691-e3fbb3ae-f0d3-4de4-8c5c-4a16c077de32.png)
 
