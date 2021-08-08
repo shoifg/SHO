@@ -5,6 +5,8 @@ Em uma empresa, vários fatores são verificados e monitorados para manter a sa�
 <p align="justify">
 Neste projeto, o monitoramente dos dados coletados pelo sensor de temperatura e umidade foram enviados para a plataforma ThingSpeak<sup>TM</sup> para a visualização em tempo real e para uma planilha no Google Sheets, que servirá como um banco de dados dos parâmetros lidos pelo sensor.</p> 
 
+[GGGG](CONEXÃOVIAPROTOCOLOMQTT).
+
 
 ## HARDWARE
 <p align="justify">
@@ -132,7 +134,8 @@ WiFiClientSecure client;                                                    //--
 String GAS_ID = "AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls";  //--> spreadsheet script ID
 ```
 ***
-IMPORTANTE
+IMPORTANTE:
+
 O **_spreadsheet script ID_** pode ser extraído do **_Current web app URL_** obtido no item 9. Se, por exemplo, o **_Current web app URL_** for:
 
 https://script.google.com/macros/s/AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls/exec
