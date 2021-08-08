@@ -119,6 +119,8 @@ Figura 9: Link do aplicativo na web
  Figura 10: Envio de dados para a planilha no Google Sheet
 </p>
 
+11. Para que qualquer usuário tenha acesso à visualização dos dados da planilha, é necessário alterar as opções de compartilhamento da planilha, no canto superior direito da tela, clicando em "**_compartilhar_**" e concedendo as permissões necessárias.
+
 ### ADAPTAÇÃO DO CÓDIGO DO NODEMCU ESP32
 
 1. Inserir o nome da rede na qual se deseja ter conexão e a respectiva senha. Inserir entre as aspas da variável **_String GAS_ID_** o **_spreadsheet script ID_**. O trecho de código a seguir mostra o local de inserção do **_spreadsheet script ID_**.
