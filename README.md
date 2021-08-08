@@ -152,3 +152,6 @@ Um [video explicativo](https://github.com/shoifg/SHO/blob/main/NodeMCU%20ESP8266
 
 
  O [código desenvolvido](https://github.com/shoifg/SHO/blob/main/sho_gs/sho_gs.ino) pode ser consultado e baixado em nosso repositório.
+ 
+ ## REFERÊNCIAS
+ 
