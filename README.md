@@ -153,5 +153,104 @@ Um [video explicativo](https://github.com/shoifg/SHO/blob/main/NodeMCU%20ESP8266
 
  O [código desenvolvido](https://github.com/shoifg/SHO/blob/main/sho_gs/sho_gs.ino) pode ser consultado e baixado em nosso repositório.
  
+## RESULTADOS
+Neste projeto, os dados provenientes das leituras do sensor DHT22 foram disponibilizados em um site construído através do serviço *__Google Sites__*. Os dados podem ser visualizados graficamente e em tempo real. A figura 11 mostra uma captura de tela do site construído até o momento.
 
- 
+![image](https://user-images.githubusercontent.com/88517401/128644666-0d58e9b4-94be-40f8-88cd-00c843685945.png)
+
+ <p align="center">
+ Figura 11: Visualização da leitura do sensor no Site
+ </p>
+
+Além do site, os dados também podem ser visualizados através de canais na plataforma ThingSpeak<sup>TM</sup>, conforme mostra a figura 12.
+<p>
+</p>
+
+![image](https://user-images.githubusercontent.com/88517401/128644882-84900c31-79dd-460b-a359-3a4887f0159f.png)
+
+
+ <p align="center">
+ Figura 12: Visualização da leitura na plataforma ThingSpeak<sup>TM</sup>
+</p>
+
+<p align="justify">
+A construção do Site não será detalhada neste tutorial, pois pode ser facilmente realizada através da plataforma Google Sites. O principal detalhe é o código a ser incorporado no site para a leitura dos sensores, podendo ser feita através do seguinte código:
+</p>
+***
+Gráfico:
+```
+<iframe width="450" height="260" style="border: 0px solid #cccccc;" src="https://thingspeak.com/channels/CHANNEL_ID/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+```
+**IMPORTANTE:** Substituir "**Channel_ID** pelo número do canal, obtido na platadorma ThingSpeak. 
+***
+
+Última leitura do sensor (tempo real):
+```
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<title>JavaScript - read JSON from URL</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	 <script>
+		   
+	 $(function() {
+	   setTime();
+	   function setTime() {
+			var date = new Date().getTime();
+			  //var string = "Timestamp: "+date;
+			
+			//Adicionar cdg para atualizar
+			fetch('https://api.thingspeak.com/channels/CHANNEL_ID/feeds/last.json?api_key=AT194Y84NJE00KCP')
+			.then(response => response.json())
+			.then(data => {
+					
+			//umidade		
+			if (data.field2 <= 65) {
+			document.getElementById("umidade").style.color = '#08298A';
+			document.getElementById("umidade").innerHTML = Math.trunc(data.field2)+"%";
+			}
+			if (data.field2 >= 66) {
+			document.getElementById("umidade").style.color = 'red';
+			document.getElementById("umidade").innerHTML = Math.trunc(data.field2)+"%";
+			}
+
+			})
+			.catch(error => console.error(error))
+			
+				
+			//fim cdg atualizar
+
+			setTimeout(setTime, 3000);
+			  $('#setTime').html(string);
+			}
+		});
+		
+	</script>
+
+	<body>
+
+	<div class="div-float">
+		<h1 id="umidade" style="text-align:center"></h1>
+		<p  class="div-texto" style="text-align:center">Umidade Relativa</p>		
+		<p style="text-align:center">Faixa Recomendável: 40% à 65%</p>
+
+	</div>
+	</body>
+
+	<style rel="stylesheet" type="text/css">
+
+
+	.div-texto{
+	  font-size:20px;
+	  color: #08298A;
+}
+
+	.div-clear {
+		clear: center;
+	}
+
+	</style>
+	</html>
+```
+ **IMPORTANTE:** Substituir **Chanel_ID** pelo número do canal, obtido na platadorma ThingSpeak. O campo **api_key** (Read) também deve ser atualizado, obtido na mesma plataforma. 
+***
