@@ -20,8 +20,8 @@ DHT dht(DHTPin, DHTTYPE);       //--> Initialize DHT sensor, DHT dht(Pin_used, T
 
 
 //----------------------- SSID and Senha do roteador WiFi --------------------------------
-const char* ssid = "GlobalNet_Daniel";                //--> Nome da rede WiFi name or SSID.
-const char* password = "2cc42829";                    //--> Senha da WiFi.
+const char* ssid = "Nome da rede";                         //--> Nome da rede WiFi name or SSID.
+const char* password = "senha da rede";                    //--> Senha da WiFi.
 
 //---------------------------------------- Host & httpsPort ------------------------------
 const char* host = "script.google.com";
