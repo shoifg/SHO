@@ -142,14 +142,14 @@ WiFiClientSecure client;                                                    //--
 String GAS_ID = "AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls";  //--> spreadsheet script ID
 ```
 ***
-IMPORTANTE:
+**IMPORTANTE:**
 
 O **_spreadsheet script ID_** pode ser extraído do **_Current web app URL_** obtido no item 9. Se, por exemplo, o **_Current web app URL_** for:
 
 https://script.google.com/macros/s/AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls/exec
 
 O **_spreadsheet script ID_** será o código entre **/s/** e **/exec**, ou seja: **AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls**.
-***
+
 Um [video explicativo](https://github.com/shoifg/SHO/blob/main/NodeMCU%20ESP8266%20%2B%20Google%20Spreadsheet%20_%20NodeMCU%20Sends%20Data%20to%20Google%20Sheets%20Directly%20(No%20Third%20Party).mp4) de apoio pode ser consultado no link: https://www.youtube.com/watch?v=okNECYf2xlY, creditado ao canal [Uteh Str](https://www.youtube.com/channel/UCk8rZ8lhAH4H-75tQ7Ljc1A).
 
 
@@ -180,7 +180,7 @@ Além do site, os dados também podem ser visualizados através de canais na pla
 A construção do Site não será detalhada neste tutorial, pois pode ser facilmente realizada através da plataforma Google Sites. O principal detalhe é o código a ser incorporado no site para a leitura dos sensores, podendo ser feita através do seguinte código:
 </p>
 
-***
+
 **Gráfico:**
 ```
 <iframe width="450" height="260" style="border: 0px solid #cccccc;" src="https://thingspeak.com/channels/CHANNEL_ID/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
