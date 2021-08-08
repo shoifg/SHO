@@ -2,11 +2,9 @@
   IFG Campus Goiânia
   Autores: Bruna Michelly O. S. Cordeiro, Fabrycio L. Nakano e Daniel S. Oliveira.
   Objetivo: Envio de leitura do sensor DHT22 para a plataforma ThingSpeak, através do NodeMcu ESP32.
-  Origem: https://www.youtube.com/watch?v=okNECYf2xlY 
   Observação: Durante a gravação do código, o Esp32 requer que seja pressionado o botão "boot" para a sua gravação
      
 *********/
-
 
 //----------------------- Inclusão de bibliotecas necessárias ----------------------------
 #include <DHT.h>
