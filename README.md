@@ -157,8 +157,10 @@ Um [video explicativo](https://github.com/shoifg/SHO/blob/main/NodeMCU%20ESP8266
  
 ___
 ## RESULTADOS
+<p align="justify">
 Neste projeto, os dados provenientes das leituras do sensor DHT22 foram disponibilizados em um site construído através do serviço *__Google Sites__*. Os dados podem ser visualizados graficamente e em tempo real. A figura 11 mostra uma captura de tela do site construído até o momento.
-
+</p>
+	
 ![image](https://user-images.githubusercontent.com/88517401/128644666-0d58e9b4-94be-40f8-88cd-00c843685945.png)
 
  <p align="center">
