@@ -5,7 +5,7 @@ Em uma empresa, vários fatores são verificados e monitorados para manter a sa�
 <p align="justify">
 Neste projeto, o monitoramente dos dados coletados pelo sensor de temperatura e umidade foram enviados para a plataforma ThingSpeak<sup>TM</sup> para a visualização em tempo real e para uma planilha no Google Sheets, que servirá como um banco de dados dos parâmetros lidos pelo sensor.</p> 
 
-[GGGG](CONEXÃOVIAPROTOCOLOMQTT).
+[GGGG](https://github.com/shoifg/SHO/blob/main/README.md#conex%C3%A3o-via-protocolo-mqtt).
 
 
 ## HARDWARE
