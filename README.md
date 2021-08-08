@@ -63,7 +63,13 @@ Nos tópicos a seguir são mostradas as etapas para a comunicação e envio de d
 
 
 ## ENVIO DE DADOS PARA O GOOGLE SHEETS
-<p align="justify"> A conexão com a planilha Google Sheets, foi realizada de acordo com o fluxograma mostrado na figuras 5. Para melhorar o entendimento, a implementação do script na planilha será mostrado passo-a-passo a seguira.</p>
+<p align="justify"> A conexão com a planilha Google Sheets, foi realizada de acordo com o fluxograma mostrado na figuras 5. Para melhorar o entendimento, a implementação do script na planilha será mostrado passo-a-passo a seguir.</p>
+
+![Fluxograma GS](https://user-images.githubusercontent.com/88517401/128617977-6b1a5738-d036-43a3-a821-4f84956e8213.png)
+
+<p align="center">
+ Figura 5: Fluxograma de conexão
+</p>
 
 
 ### IMPLEMENTAÇÃO DO SCRIPT NA PLANILHA ON-LINE
@@ -134,11 +140,5 @@ O **_spreadsheet script ID_** será o código entre **/s/** e **/exec**, ou seja
 ***
 Um [video explicativo](https://github.com/shoifg/SHO/blob/main/NodeMCU%20ESP8266%20%2B%20Google%20Spreadsheet%20_%20NodeMCU%20Sends%20Data%20to%20Google%20Sheets%20Directly%20(No%20Third%20Party).mp4) de apoio pode ser consultado no link: https://www.youtube.com/watch?v=okNECYf2xlY, creditado ao canal [Uteh Str](https://www.youtube.com/channel/UCk8rZ8lhAH4H-75tQ7Ljc1A).
 
-
-COLOCAR FLUXOGRAMA AQUI
-
-<p align="center">
- Figura 5: Fluxograma de conexão
-</p>
 
  O [código desenvolvido](https://github.com/shoifg/SHO/blob/main/sho_gs/sho_gs.ino) pode ser consultado e baixado em nosso repositório.
