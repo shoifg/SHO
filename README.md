@@ -139,16 +139,16 @@ const char* host = "script.google.com";
 const int httpsPort = 443;
 //-------------------------------------------------------------------------------------------------------------------------
 WiFiClientSecure client;                                                    //--> Criação do objeto WiFiClientSecure.                                                       
-String GAS_ID = "AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls";  //--> spreadsheet script ID
+String GAS_ID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";  //--> spreadsheet script ID
 ```
 ***
 **IMPORTANTE:**
 
 O **_spreadsheet script ID_** pode ser extraído do **_Current web app URL_** obtido no item 9. Se, por exemplo, o **_Current web app URL_** for:
 
-https://script.google.com/macros/s/AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls/exec
+https://script.google.com/macros/s/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/exec
 
-O **_spreadsheet script ID_** será o código entre **/s/** e **/exec**, ou seja: **AKfycbyQgTKDPBFyKlVmm2LO16C-bFvL4H26OPiW1x4QUYSK8DXvyls**.
+O **_spreadsheet script ID_** será o código entre **/s/** e **/exec**, ou seja: **XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX**.
 
 Um [video explicativo](https://github.com/shoifg/SHO/blob/main/NodeMCU%20ESP8266%20%2B%20Google%20Spreadsheet%20_%20NodeMCU%20Sends%20Data%20to%20Google%20Sheets%20Directly%20(No%20Third%20Party).mp4) de apoio pode ser consultado no link: https://www.youtube.com/watch?v=okNECYf2xlY, creditado ao canal [Uteh Str](https://www.youtube.com/channel/UCk8rZ8lhAH4H-75tQ7Ljc1A).
 
@@ -187,7 +187,7 @@ A construção do Site não será detalhada neste tutorial, pois pode ser facilm
 ```
 <iframe width="450" height="260" style="border: 0px solid #cccccc;" src="https://thingspeak.com/channels/CHANNEL_ID/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
 ```
-**IMPORTANTE:** Substituir "**Channel_ID**" pelo número do canal, obtido na platadorma ThingSpeak. 
+**IMPORTANTE:** Substituir "**Channel_ID**" pelo número do canal e atualizar o valor da , obtido na platadorma ThingSpeak. 
 ***
 
 **Última leitura do sensor (tempo real):**
@@ -206,7 +206,7 @@ A construção do Site não será detalhada neste tutorial, pois pode ser facilm
 			  //var string = "Timestamp: "+date;
 			
 			//Adicionar cdg para atualizar
-			fetch('https://api.thingspeak.com/channels/CHANNEL_ID/feeds/last.json?api_key=AT194Y84NJE00KCP')
+			fetch('https://api.thingspeak.com/channels/CHANNEL_ID/feeds/last.json?api_key=XXXXXXXXXXXXXXXX')
 			.then(response => response.json())
 			.then(data => {
 					
@@ -258,7 +258,7 @@ A construção do Site não será detalhada neste tutorial, pois pode ser facilm
 	</style>
 	</html>
 ```
- **IMPORTANTE:** Substituir "**Chanel_ID**" pelo número do canal, obtido na platadorma ThingSpeak. O campo **api_key** (Read) também deve ser atualizado, obtido na mesma plataforma. 
+ **IMPORTANTE:** Substituir "**Chanel_ID**" pelo número do canal, obtido na platadorma ThingSpeak. O campo **api_key** (Read) também deve ser atualizado, obtido na mesma plataforma (substituindo XXXXXXXXXXXXXXXX **api_key**). 
 ***  
 **Gráfico das leituras médias de temperatura e umidade:**  
 
