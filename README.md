@@ -259,9 +259,11 @@ A construção do Site não será detalhada neste tutorial, pois pode ser facilm
 	</html>
 ```
  **IMPORTANTE:** Substituir "**Chanel_ID**" pelo número do canal, obtido na platadorma ThingSpeak. O campo **api_key** (Read) também deve ser atualizado, obtido na mesma plataforma. 
-***
-Para a apresentação das leituras médias, é necessário realizar os procedimentos relatados a seguir:  
-**Gráfico das leituras médias de temperatura e umidade:**
+***  
+**Gráfico das leituras médias de temperatura e umidade:**  
+
+Para a apresentação das leituras médias do período de 1 hora, é necessário realizar os procedimentos relatados a seguir:    
+
 1. Realizar o login na plataforma após login na plataforma ThingSpeak<sup>TM</sup>, clicar no botão **MATLAB Analysis**;
 2. Selecionar: **Custom (no starter code)** e em seguinda **Create**;
 3. Renomear o campo **name** para **Media**;
