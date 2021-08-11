@@ -25,8 +25,8 @@ DHT dht(dhtPin, dhtType);     //--> Inicialização do sensor DHT22 (Pino utiliz
 
 
 //------------------- Configurações de rede e cliente WiFi -------------------------------
-char ssid[] = "Nome da rede";             //--> nome da rede.
-char pass[] = "senha da rede";            //--> senha da rede.
+char ssid[] = "GlobalNet_Daniel";             //--> nome da rede.
+char pass[] = "2cc42829";            //--> senha da rede.
 char mqttUserName[] = "sho";              //--> nome de usuário do MQTT
 char mqttPass[] = "SXVQDA8CTIUT3ES1";     //--> chave de acesso do MQTT.
 char writeAPIKey[] = "DN6SJJDTOJUJIUVP"; //--> chave de acesso do canal thingspeak.
@@ -117,14 +117,14 @@ void loop(){
   umid = dht.readHumidity();
 
   if(isnan(umid) || isnan(temp)){
-    Serial.println("Erro de leitura DHT11!");
+    Serial.println("Erro de leitura DHT22!");
   }
   delay(100);
   Serial.print("Temperatura: ");
   Serial.println(temp);
   Serial.print("Umidade: " );
   Serial.println(umid);
-  delay(2000);
+  
 
   if (temp > 26.0){
     digitalWrite(ledRed, HIGH);
@@ -152,4 +152,5 @@ void loop(){
 
   mqttClient.publish(topicBuffer, msgBuffer);
   lastConnectionTime = millis();
+  delay(600000);                                      //--> Aguarda 10 minutos              
 }
