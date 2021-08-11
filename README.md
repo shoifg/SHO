@@ -183,7 +183,7 @@ A construção do Site não será detalhada neste tutorial, pois pode ser facilm
 </p>
 
 
-**Gráfico:**
+**Gráfico das leituras:**
 ```
 <iframe width="450" height="260" style="border: 0px solid #cccccc;" src="https://thingspeak.com/channels/CHANNEL_ID/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
 ```
@@ -260,3 +260,19 @@ A construção do Site não será detalhada neste tutorial, pois pode ser facilm
 ```
  **IMPORTANTE:** Substituir "**Chanel_ID**" pelo número do canal, obtido na platadorma ThingSpeak. O campo **api_key** (Read) também deve ser atualizado, obtido na mesma plataforma. 
 ***
+Para a apresentação das leituras médias, é necessário realizar os procedimentos relatados a seguir:  
+**Gráfico das leituras médias de temperatura e umidade:**
+1. Realizar o login na plataforma após login na plataforma ThingSpeak<sup>TM</sup>, clicar no botão **MATLAB Analysis**;
+2. Selecionar: **Custom (no starter code)** e em seguinda **Create**;
+3. Renomear o campo **name** para **Media**;
+4. Colar o código do arquivo ["analiseMediaMatlab.m"](https://github.com/shoifg/SHO/blob/main/analiseMediaMatlab.m) na caixa de texto **MATLAB Code**;
+5. Clicar em **Save**;
+6. Na mesma página, um pouco mais abaixo, clicar na opção na parte inferior: **Schedule Actions**;
+7. Clicar em **TimeControl** e cadastrar de quanto em quanto tempo o código será executado;
+8. Na aba de cadastro de um **newTimeControl**, colocar um nome e selecionar a **Frequency** para **Recurring**;
+9. Quando o **Recurring** for selecionado, vão aparecer opções de **Recurrence**. Selecionar **hour** e colocar o valor 1 no campo de texto, para que o código possa ser executado de 1 em 1 hora);
+10. Na mesma página, antes de salvar, verificar se na lista suspensa **Action** está selecionada a opção **Matlab Analysis**; 
+11. Na caixa de seleção: Code to execute - selecionar o código da **média**;
+12. Voltar para a página do canal, onde aparecem os gráficos e clicar em **Channel Settings**;
+13. Criar mais **2 fields - Field 3 com o nome: Média - Temperatura [°C] e Field 4 com o nome Média - Umidade [%]**;
+14. Após 1 hora os dados serão carregados nos novos gráficos.
