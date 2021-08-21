@@ -29,8 +29,8 @@ char ssid[] = "GlobalNet_Daniel";             //--> nome da rede.
 char pass[] = "2cc42829";            //--> senha da rede.
 char mqttUserName[] = "sho";              //--> nome de usuário do MQTT
 char mqttPass[] = "SXVQDA8CTIUT3ES1";     //--> chave de acesso do MQTT.
-char writeAPIKey[] = "DN6SJJDTOJUJIUVP"; //--> chave de acesso do canal thingspeak.
-long channelID = 1447649; //Identificação do canal thingspeak.
+char writeAPIKey[] = "XJ9DEWT282DXJLX9"; //--> chave de acesso do canal thingspeak.
+long channelID = 1471568; //Identificação do canal thingspeak.
 
 //------------------- Definir identificação de cliente randomica -------------------------------
 
@@ -44,7 +44,7 @@ PubSubClient mqttClient(client);                 //--> Inicializar a biblioteca 
 const char* server = "mqtt.thingspeak.com";
 
 unsigned long lastConnectionTime = 0;            //--> Variavel para ter controle da ultima conexão e intervalo de publicação dos dados*/
-const unsigned long postingInterval = 20000L;    //--> Postar a cada 20 segundos.
+const unsigned long postingInterval = 600000;    //--> Postar a cada 10 minutos.
 
 //=============================== void setup =============================================
 
@@ -124,7 +124,7 @@ void loop(){
   Serial.println(temp);
   Serial.print("Umidade: " );
   Serial.println(umid);
-  
+    delay(2000);
 
   if (temp > 26.0){
     digitalWrite(ledRed, HIGH);
@@ -152,5 +152,5 @@ void loop(){
 
   mqttClient.publish(topicBuffer, msgBuffer);
   lastConnectionTime = millis();
-  delay(600000);                                      //--> Aguarda 10 minutos              
+                                                    
 }
